@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+body {
+	background-color: aquamarine;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+.Header {
+    background-color: #ddd;
+    padding: 10px 0;
+    border:1px solid;
+    border-color: skyblue;
+}
+
+.Header-Bar {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    list-style: none;
+}
+
+.Isi {
+    display: grid;
+    grid-template-columns: 3fr 1fr; 
+    gap: 20px;
+    padding: 20px;
+}
+
+.Kolom-Kiri {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.Kolom-Kanan-Semua {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.Kolom-Kanan {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+h1, h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+}
+
+i {
+    font-style: italic;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .Isi {
+        grid-template-columns: 1fr; 
+    }
+    .Kolom-Kanan-Semua {
+        grid-template-rows: 1fr; 
+    }
+}
+img.Gambar {
+	object-fit: cover;
+	width: 50%;
+}
+.Teks {
+	color: black;
+}
+.TeksGambar {
+    display: flex; 
+    align-items: flex-start;
+    gap: 20px; 
+    margin-bottom: 30px;
+}
+.Gambarr {
+	object-fit: cover;
+	width: 100%;
+}
+.Gambarrr {
+	object-fit: cover;
+	width: 100%;
+}
+.Gambarrrumum {
+    object-fit: cover;
+    width: 100%;
+}
+.Footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+/*Subsetting*/
+.Setting {
+    position: relative; 
+}
+.Setting .Subsetting {
+    display: none; 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    background-color: #ddd; 
+    border: 1px solid #ddd; 
+    border-top: none; 
+    list-style: none; 
+    padding: 10px 0;  
+    width: max-content;
+    text-align: center;
+}
+.Setting:hover .Subsetting {
+    display: block;
+}
+.Subsetting li {
+    padding: 8px 16px; 
+}
+.Subsetting li a {
+    color: black; 
+    text-decoration: none;
+}
+.Subsetting li a:hover {
+    background-color: #ccc; 
+}
+
+/* Notifikasi Berhasil */
+.berhasilperbarui {
+    border: 1px solid #4CAF50;
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px 16px;
+    margin-top: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Notifikasi Gagal */
+.gagalperbarui {
+    border: 1px solid #dc3545;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px 16px;
+    margin-top: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+/*Ganti Gambar*/
+.Tomboll {
+    bottom: 1px solid;
+    margin-top: 18px;
+    padding: 10px 16px;
+}
+.Tomboll:hover {
+    cursor: pointer;
+}
+.Tombolll {
+    border: 1px solid;
+    margin-top: 18px;
+    padding:10px 16px;
+}
+.Tombolll:hover {
+    cursor: pointer;
+}
+.TeksGambar2 {
+    display: flex; 
+    align-items: flex-start;
+    gap: 20px; 
+}
+.Tombollll {
+    margin-top: 0;
+    padding: 16px 10px;
+}
+.Tombollll:hover {
+    cursor: pointer;
+}
+/*Hari 1*/
+.Gambaraktivitas {
+    margin: 0;
+    display: block;
+    width: 70%;
+    margin-bottom: 10px;
+    left: 100px;
+}
+
+.Teksaktivitas {
+    color: darkred;
+}
+.TeksGambaraktivitas {
+    display: flex; 
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 5px;
+}
+
+/*Hobi*/
+.TeksHobi {
+    color: darkred;
+}
+.Gambarhobi {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+.Isihobi {
+    display: grid;
+    grid-template-columns: 3fr 1fr; 
+    gap: 20px;
+    padding: 20px;
+    align-items: flex-start; 
+}
+
+.Kolom-Kirihobi {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.Kolom-Kanan-Semuahobi {
+    display: grid;
+    grid-template-rows: auto auto; 
+    gap: 20px;
+}
+
+.Kolom-Kananhobi {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .Isihobi {
+        grid-template-columns: 1fr; 
+    }
+    .Kolom-Kanan-Semuahobi {
+        grid-template-rows: 1fr; 
+    }
+}
+
+.Gambarhobi2 {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+.TeksHobi2 {
+    margin-top: 10px;
+    color: darkred;
+}
+.Gambaraktivitashobi {
+    width: 100%;
+}
+.Bagianaktivitashobi p {
+    margin-bottom: 10px;
+}
+
+.Kolom-Kanan-Semuaaktivitas {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+}
+
+.Kolom-Kananhobi1, .Kolom-Kananhobi2 {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    height: 400px;
+}
+
+@media (max-width: 768px) {
+    .Isihobi {
+    grid-template-columns: 1fr; 
+    }
+    .Kolom-Kanan-Semuahobi {
+    grid-template-rows: 1fr; 
+    }
+}
+.teksgame {
+    text-align: justify;
+}
+.Isi1 {
+    display: block;
+    gap: 20px;
+    padding: 100px;
+    margin: 0 auto;
+}
+.Gambarbiodata {
+    margin: 0 auto;
+    display: block;
+    width:30%;
+    border: 5px solid;
+    border-color: #c0c0c0;
+    margin-bottom: 10px;
+}
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+td {
+    border: 1px solid black;
+    padding: 10px;
+}
+td:first-child {
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+.Kolom-Kananindex {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    height: 350px;
+}
+.Gambarbiodataindex {
+     margin: 0 auto;
+    display: block;
+    height: 300px;
+}
+.Kolom-Kananindex2 {
+   background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    height: 250px;
+}
+.Kolom-Kananindex2umum {
+   background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    height: 250px;
+}
+.Kolom-Kiriindex {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    height: 520px;
+}
+.Kolom-Kiriindexumum {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    height: 770px;
+}
+.Gambarindex {
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+    margin-bottom: 10px;
+    left: 100px;
+}
+.Blogdetailisi {
+    background-color: #fff;
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 800px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.Blogdetailisi h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.Blogdetailisi .Tanggal {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;    
+}
+
+.Blogdetailisi .Isiblog {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.6;
+        }
+
+.BlogNavbar {
+    background-color: #ddd;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.BlogNavbar a {
+    font-size: 1.1rem;
+    color: black;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.BlogNavbar a:hover {
+    color: #0066cc;
+}
+
+.BlogFooter {
+    background-color: #ddd;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #ccc;
+}
+
+.BlogFooter p {
+    color: #333;
+    font-size: 1rem;
+}
+pre {
+    margin: 0 auto;
+    display: block;
+    background-color: #fefefe;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin-bottom: 20px;
+    border: 1px solid #bbb;
+}
+img.Gambarindexumum {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
